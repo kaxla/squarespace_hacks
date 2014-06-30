@@ -1,0 +1,29 @@
+
+------------------------------------------------------------
+/* alter caption appearance */
+div > p {
+    color: black !important;
+    font-size: 40px !important;
+    text-align: center;
+    opacity: 0;
+}
+/* vertical align */
+.image-caption-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-400%);
+}
+
+/* make caption visible on hover */
+.intrinsic:hover div > p{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+/* picture mask on hover */
+.intrinsic:hover {
+    opacity: .2;
+    transition: all 0.4s ease-in-out;
+
+}
+
