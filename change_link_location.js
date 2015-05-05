@@ -8,3 +8,12 @@ $(document).ready(function(){
 });
 
 </script>
+
+// add class to existing link and then change it:
+
+<script type= "text/javascript">
+	$(document).ready(function(){
+		$('a[href="CURRENT HREF"]').attr('class', 'CLASS NAME');
+		$(".CLASS NAME").prop('href', 'NEW HREF');
+	});
+</script>
