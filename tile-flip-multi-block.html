@@ -1,0 +1,75 @@
+<div class="card-wrapper">
+  <div class="card-front">
+    <div class="front-text">$454 Million</div>
+  </div>
+  <div class="card-back">
+    <div class="back-text">Total equity invested, including co-investor capital</div>
+  </div>
+</div>
+
+
+<style>
+/*red: #FF0019*/
+/*black: #222222*/
+.card-wrapper {
+	color: #fff;
+	height: 200px;
+	margin: 10px 0;
+	padding: 0;
+	width: 200px;
+	position: relative;
+}
+
+/*-------- cards --------*/
+.card-front,
+.card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 185px;
+	height: 170px;
+	padding: 20px;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-front {
+  background-color: #FF0019;
+}
+
+.card-back {
+	background-color: #222222;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+/*--------- card text styling ---------*/
+.front-text, .back-text {
+  text-align: center;
+}
+
+.front-text {
+  color: #222222;
+  font-size: 3em;
+}
+
+.back-text {
+  font-size: 1.5em;
+}
+
+/*-------- cards / flip effect --------*/
+.card-wrapper:hover .card-front {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.card-wrapper:hover .card-back {
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+</style>

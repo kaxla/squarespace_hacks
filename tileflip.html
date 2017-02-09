@@ -1,0 +1,244 @@
+<!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+    	<!-- flex-container -->
+        <div class="flex-container">
+        	<!-- flex-item -->
+            <div class="flex-item">
+            	<div class="flex-item-inner">
+                	<!-- card -->
+                	<a href="#">
+                        <div class="card-front">
+                            <div class="front-text">3 Years</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-text">From concept on paper, to a fully executed and deployed investment strategy</div>
+                        </div>
+                    </a>
+                    <!-- /card -->
+                </div>
+            </div>
+            <!-- /flex-item -->
+
+            <!-- flex-item -->
+            <div class="flex-item">
+              <div class="flex-item-inner">
+                  <!-- card -->
+                  <a href="#">
+                        <div class="card-front">
+                            <div class="front-text">13 Properties</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-text">Diversified across the Midwestern and Southeastern United States</div>
+                        </div>
+                    </a>
+                    <!-- /card -->
+                </div>
+            </div>
+            <!-- /flex-item -->
+
+            <!-- flex-item -->
+            <div class="flex-item">
+              <div class="flex-item-inner">
+                  <!-- card -->
+                  <a href="#">
+                        <div class="card-front">
+                          <div class="front-text">10.25%</div>
+                        </div>
+                        <div class="card-back">
+                          <div class="back-text">Gross weighted annual yield of portfolio</div>
+                        </div>
+                    </a>
+                    <!-- /card -->
+                </div>
+            </div>
+            <!-- /flex-item -->
+
+            <!-- flex-item -->
+            <div class="flex-item">
+              <div class="flex-item-inner">
+                  <!-- card -->
+                  <a href="#">
+                        <div class="card-front">
+                          <div class="front-text">4,739</div>
+                        </div>
+                        <div class="card-back">
+                          <div class="back-text">Units in the multi-family portfolio</div>
+                        </div>
+                    </a>
+                    <!-- /card -->
+                </div>
+            </div>
+            <!-- flex-item -->
+        </div>
+        <!-- /flex-container -->
+
+        <!-- flex-container -->
+          <div class="flex-container">
+          	<!-- flex-item -->
+              <div class="flex-item">
+              	<div class="flex-item-inner">
+                  	<!-- card -->
+                  	<a href="#">
+                          <div class="card-front">
+                            <div class="front-text">$454 Million</div>
+                          </div>
+                          <div class="card-back">
+                            <div class="back-text">Total equity invested, including co-investor capital</div>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- /flex-item -->
+
+              <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                    <a href="#">
+                          <div class="card-front">
+                            <div class="front-text">$131 million</div>
+                          </div>
+                          <div class="card-back">
+                            <div class="back-text">Total equity invested, including co-invester capital</div>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- /flex-item -->
+
+              <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                    <a href="#">
+                          <div class="card-front">
+                            <div class="front-text">2x</div>
+                          </div>
+                          <div class="card-back">
+                            <div class="back-text">Gross return on equity from 1st property sold</div>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- /flex-item -->
+
+              <!-- flex-item -->
+              <div class="flex-item">
+                <div class="flex-item-inner">
+                    <!-- card -->
+                    <a href="#">
+                          <div class="card-front">
+                            <div class="front-text">30%</div>
+                          </div>
+                          <div class="card-back">
+                            <div class="back-text">Gross IRR on 1st property sold</div>
+                          </div>
+                      </a>
+                      <!-- /card -->
+                  </div>
+              </div>
+              <!-- flex-item -->
+          </div>
+          <!-- /flex-container -->
+    <!-- </div> -->
+<!-- </div> -->
+
+<style>
+
+/*------- hacky shit for squarespace-------*/
+
+/* keep first box from being above the rest of them*/
+.sqs-block-code .sqs-block-content *:first-child {}
+
+/*allow text to center using flex box*/
+.sqs-block-code .sqs-block-content *:last-child {}
+
+/*-------- flex container --------*/
+.flex-container {
+	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-webkit-flex-flow: row wrap;
+	position: relative;
+}
+.flex-item {
+	color: #fff;
+	height: 200px;
+	margin: 10px 0;
+	padding: 0;
+	width: 200px;
+	position: relative;
+}
+.flex-item-inner {
+	display: flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/*-------- cards --------*/
+.card-front,
+.card-back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 185px;
+	height: 170px;
+	padding: 20px;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	justify-content: flex-end;
+  /*display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;*/
+
+}
+
+.card-front {
+  background-color: pink;
+}
+
+.card-back {
+	background-color: grey;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+/*--------- card text styling ---------*/
+.front-text, .back-text {
+  /*margin: auto;*/
+}
+
+
+
+/*-------- cards / flip effect --------*/
+.flex-item:hover .card-front {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.flex-item:hover .card-back {
+	-webkit-transform: rotateY(0);
+	transform: rotateY(0);
+}
+</style>
